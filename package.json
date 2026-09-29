@@ -1,0 +1,21 @@
+{
+  "name": "ocr-layout-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local OCR layout reading-order and table reconstruction backend (no real OCR).",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/api/server.ts",
+    "demo": "tsx scripts/demo.ts",
+    "cli": "tsx src/cli/cli.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
